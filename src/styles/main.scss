@@ -27,12 +27,11 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px 0;
-    position: relative;
     border-bottom: 2px solid gray;
 
-    &__link {
+    &_link {
       text-decoration: none;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: "Times New Roman", Times, serif;
       width: 100%;
       text-align: center;
       min-width: max-content;
@@ -43,10 +42,10 @@ body {
       font-weight: bold;
     }
 
-    &__link--active {
+    &_link--active {
       background-color: #aef2f2;
-      color:rgb(48, 47, 47);
-      font-family: 'Times New Roman', Times, serif;
+      color: rgb(48, 47, 47);
+      font-family: "Times New Roman", Times, serif;
       padding: 0 5px;
       display: flex;
       align-items: center;
@@ -63,27 +62,27 @@ body {
   }
 
   &__contents {
-    padding: 0 15px;
+    padding: 20px;
+    min-height: 200px;
 
-    &__content {
-      height: 300px;
-      margin-top: 15px;
+    &_content {
       display: none;
+      
     }
 
-    &__content--active {
-      display: block;
+    &_content--active {
+      display: flex;
       color: rgb(48, 47, 47);
     }
   }
 }
 
 @media (min-width: 320px) and (max-width: 440px) {
-  .tabs-wrapper__links__link {
+  .tabs-wrapper__links_link {
     font-size: 13px;
   }
 
-  .tabs-wrapper__contents__content{
-    height: 550px;
+  .tabs-wrapper__contents_content {
+    min-height: 500px;
   }
 }
